@@ -1,21 +1,20 @@
 <html>
     <head>
-
+            <link rel="stylesheet" href="liste.css">
     </head>
     <body>
-        <div>
-            <h1>
+        <div id="formulaire">
+            <h1 id="titreformulaire">
                 Vous souhaitez contribuer dans cette merveilleuse aventure ?
             </h1>
             <p>
                 Merci de remplir le formulaire ci dessous
             </p>
-        </div>
         <form action="liste.html">
             <input type="text" name="text" id="nom" placeholder="Votre Nom">
             <input type="text" name="text" id="prénom" placeholder="Votre Prénom">
             <br>
-            <h1>Cochez les objets que vous souhaitez nous offrir</h1>
+            <h1 id="titreformulaire2">Cochez les objets que vous souhaitez nous offrir</h1>
                     <p>
                         Vêtements:<br>
                         <input type="checkbox" name="bavoir" id="bavoir"/> <label for="bavoir">Bavoir</label><br>
@@ -27,7 +26,7 @@
                         <input type="checkbox" name="gigoteuse" id="gigoteuse"/> <label for="gigoteuse">Gigoteuse</label><br>
                     </p>
                     <p>
-                        Meuble: <br>
+                        Meuble:<br>
                         <input type="checkbox" name="lit" id="lit"/> <label for="lit">Lit à barreaux</label><br>
                         <input type="checkbox" name="matelas" id="matelas"/> <label for="matelas">Matelas de sol</label><br>
                         <input type="checkbox" name="baignoire" id="baignoire"/> <label for="baignoire">Baignoire</label><br>
@@ -37,14 +36,14 @@
                         <input type="checkbox" name="chaise" id="chaise"/> <label for="chaise">Chaise haute</label><br>
                     </p>
                     <p>
-                        Literie: <br>
+                        Literie:<br>
                         <input type="checkbox" name="draps" id="draps"/> <label for="draps">Draps housse</label><br>
                         <input type="checkbox" name="couverture" id="couverture"/> <label for="couverture">Couverture</label><br>
                         <input type="checkbox" name="tour" id="tour"/> <label for="tour">Tour de lit</label><br>
                         <input type="checkbox" name="alèse" id="alèse"/> <label for="alèse">Alèse</label><br>
                     </p>
                     <p>
-                        Divers: <br>
+                        Divers:<br>
                         <input type="checkbox" name="biberons" id="biberons"/> <label for="biberons">Biberons</label><br>
                         <input type="checkbox" name="tétines" id="tétines"/> <label for="tétines">Tétines</label><br>
                         <input type="checkbox" name="chauffebib" id="chauffebib"/> <label for="chauffebib">Chauffe-biberons</label><br>
@@ -56,12 +55,13 @@
                         <input type="checkbox" name="sac" id="sac"/> <label for="sac">Sac à langer</label><br>
                     </p>
             <br>
-            <label for="message">Laissez nous un petit mot !</label>
+            <label id="textarea" for="message">Laissez nous un petit mot !</label>
             <br>
             <textarea name="message" id="message"></textarea>
             <br>
             <h6>En cliquant sur envoyer, vous serez redirigé vers la liste de naissance.</h6>
-            <input type="submit" value="Envoyer" />
+            <input id="button" type="submit" value="Envoyer" />
             </form>
+            </div>
     </body>
 </html>
